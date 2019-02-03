@@ -18,12 +18,13 @@ export default function reducer(state = initialState, action) {
       loading: true
     });
   } else if (action.type === SEARCH_SUCCESS) {
+    console.log('enter action = searchSuccess', action);
     return Object.assign({}, state, {
       loading: false,
       error: false,
-      charName: action.name,
-      realmName: action.realm,
-      stats: action.stats
+      charName: action.character.name,
+      realmName: action.character.realm,
+      stats: action.character.stats
     });
   } else if (action.type === SEARCH_ERROR) {
     return Object.assign({}, state, {

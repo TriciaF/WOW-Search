@@ -6,17 +6,22 @@ import authReducer from './reducers/auth-reducer';
 //import {setAuthToken, refreshAuthToken} from './actions/auth';
 import searchReducer from './reducers/search-reducer';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(
-    combineReducers({
-        form: formReducer,
-        search: searchReducer,
-        auth: authReducer,
-    },composeEnhancers(
-    applyMiddleware(thunk))
-    )
-);
+const initial_state = {};
+
+let middleware = applyMiddleware(thunk);
+    if (process.env.NODE_ENV !== 'production') {
+        middleware = compose(middleware, window.devToolsExtension && window.devToolsExtension());
+    }
+    const reducers = combineReducers({
+    form: formReducer,
+    search: searchReducer,
+    auth: authReducer
+});
+    const store = createStore(reducers, initial_state, middleware);
+
+
+
 
 // Hydrate the authToken from localStorage if it exist
 // const authToken = loadAuthToken();

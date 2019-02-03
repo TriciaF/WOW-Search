@@ -9,9 +9,9 @@ export const searchRequest = () => ({
 });
 
 export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
-export const searchSuccess = (stats) => ({
+export const searchSuccess = (character) => ({
   type: SEARCH_SUCCESS,
-  stats
+  character 
 });
 
 export const SEARCH_ERROR = 'SEARCH_ERROR';
@@ -37,13 +37,10 @@ export const search = (charName, realmName) => (dispatch, getState) => {
       if (!res.ok) {
         return Promise.reject(res.statusText);
       }
-      else {
-        console.log('char stats = ', res.json());
         return res.json();
-      }
     })
-    .then(stats => {
-      dispatch(searchSuccess(stats));
+    .then(character => {
+      dispatch(searchSuccess(character));
     })
     .catch(err => {
       dispatch(searchError(err));
