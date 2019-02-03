@@ -25,7 +25,7 @@ export const searchError = (error) => ({
 export const search = (charName, realmName) => (dispatch, getState) => {
   //const authToken = getState().auth.authToken;
   dispatch(searchRequest());
-  const authToken = 'USQsUkV7Ptu0sua2tT6clJV0ds1pzGemjh';
+  const authToken = 'US3VdbMpEq9thhYciXrPdaCBoKTbv8B71k';
   return fetch(`${WOW_API_URL}/${realmName}/${charName}?fields=stats&locale=en_US&access_token=${authToken}`, {
     method: 'GET',
     headers: {

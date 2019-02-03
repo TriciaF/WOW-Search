@@ -21,6 +21,5 @@
     align-content: center;
     height: 370px;
     background-color: rgba(18, 26, 49, 0.5);
-    /* opacity: 0.5; */
     flex-wrap: wrap;
 }
