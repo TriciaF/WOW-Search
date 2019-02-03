@@ -2,7 +2,6 @@
     min-height: 100vh;
     text-align: center;
     background-image: url('images/wow-background.jpg');
-    font-family: 'Play', sans-serif;
 }
 
 .App-logo {
@@ -13,4 +12,15 @@
 
 .App-header {
     justify-content: center;
+}
+
+.stats-container {
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 370px;
+    background-color: rgba(18, 26, 49, 0.5);
+    /* opacity: 0.5; */
+    flex-wrap: wrap;
 }

@@ -1,0 +1,9 @@
+.player-mode-container {
+    background-color: rgba(18, 26, 49, 1);
+    height: 330px;
+    width: 300px;
+    margin: 20px;
+    flex-grow: 1;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+}

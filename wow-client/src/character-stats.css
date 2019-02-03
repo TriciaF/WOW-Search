@@ -1,0 +1,10 @@
+.character-stats-container {
+    background-color: rgba(18, 26, 49, 1);
+    height: 330px;
+    width: 400px;
+    margin: 20px;
+    /* opacity: 1; */
+    flex-grow: 2;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+}

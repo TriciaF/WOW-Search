@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './images/eagledream-logo.png';
 import './App.css';
 import SearchForm from './search-form';
+import CharacterStats from './character-stats';
+import PlayerMode from './player-mode';
+
 
 class App extends Component {
   //TO DO: check for valid API auth token expiration and request if expired.
@@ -15,6 +18,10 @@ class App extends Component {
         </header>
         <main>
           <SearchForm />
+          <div className = 'stats-container'>
+            <CharacterStats />
+            <PlayerMode />
+          </div>
         </main>
       </div>
     );
