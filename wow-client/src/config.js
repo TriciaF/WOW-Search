@@ -1,0 +1,2 @@
+export const WOW_API_URL = process.env.REACT_APP_WOW_API_URL || 'https://us.api.blizzard.com/wow/character/';
+export const WOW_AUTH_URL = process.env.REACT_APP_WOW_AUTH_URL || 'https:////us.battle.net/oauth/token';

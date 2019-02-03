@@ -1,0 +1,39 @@
+.search-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.search-form-input {
+    width: 220px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#charName,
+#realmName {
+    background-color: rgb(11, 18, 47);
+    color: white;
+    padding-left: 7px;
+    width: 200px;
+    height: 20px;
+    border: 0;
+}
+
+#charName,
+#realmName:focus {
+    color: white;
+}
+
+.search-button {
+    width: 207px;
+    height: 20px;
+    background-color: rgb(56, 125, 138);
+    color: white;
+    border: 0;
+}
+
+.search-form-error,
+.search-form-warning {
+    color: red;
+}

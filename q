@@ -1,0 +1,26 @@
+initial commit-app structure in place
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   wow-client/.gitignore
+#	new file:   wow-client/README.md
+#	new file:   wow-client/package-lock.json
+#	new file:   wow-client/package.json
+#	new file:   wow-client/public/favicon.ico
+#	new file:   wow-client/public/index.html
+#	new file:   wow-client/public/manifest.json
+#	new file:   wow-client/src/App.css
+#	new file:   wow-client/src/App.js
+#	new file:   wow-client/src/App.test.js
+#	new file:   wow-client/src/eagledream-logo.png
+#	new file:   wow-client/src/index.css
+#	new file:   wow-client/src/index.js
+#	new file:   wow-client/src/logo.svg
+#	new file:   wow-client/src/search-input.js
+#	new file:   wow-client/src/serviceWorker.js
+#	new file:   wow-client/src/wow-background.jpg
+#
