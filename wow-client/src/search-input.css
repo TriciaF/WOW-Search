@@ -18,6 +18,7 @@
     width: 200px;
     height: 20px;
     border: 0;
+    font-family: 'Play', sans-serif;
 }
 
 #charName,
@@ -31,6 +32,7 @@
     background-color: rgb(56, 125, 138);
     color: white;
     border: 0;
+    font-family: 'Play', sans-serif;
 }
 
 .search-form-error,

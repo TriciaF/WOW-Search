@@ -5,6 +5,7 @@ import {
 } from '../actions/search';
 
 const initialState = {
+  stats: {},
   charName: null,
   realmName: null,
   loading: false,
@@ -20,8 +21,9 @@ export default function reducer(state = initialState, action) {
     return Object.assign({}, state, {
       loading: false,
       error: false,
-      charName: action.charName,
-      realmName: action.realmName
+      charName: action.name,
+      realmName: action.realm,
+      stats: action.stats
     });
   } else if (action.type === SEARCH_ERROR) {
     return Object.assign({}, state, {
