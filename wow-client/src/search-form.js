@@ -1,14 +1,16 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
 import SearchInput from './search-input';
-import {search} from '../src/actions/search';
+import {getCharacterStats} from '../src/actions/search';
+import {getCharacterItems} from '../src/actions/search';
 import {required, nonEmpty} from './validators';
 import './search-input.css';
 
 export class SearchForm extends React.Component {
 
     onSubmit(values) {
-      return this.props.dispatch(search(values.charName, values.realmName));
+      this.props.dispatch(getCharacterStats(values.charName, values.realmName));
+      return this.props.dispatch(getCharacterItems(values.charName, values.realmName));
     }
 
     render() {

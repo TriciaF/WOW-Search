@@ -3,7 +3,6 @@ import logo from './images/eagledream-logo.png';
 import './App.css';
 import SearchForm from './search-form';
 import CharacterStats from './character-stats';
-import PlayerMode from './player-mode';
 
 
 class App extends Component {
@@ -20,7 +19,6 @@ class App extends Component {
           <SearchForm />
           <div className = 'stats-container'>
             <CharacterStats />
-            <PlayerMode />
           </div>
         </main>
       </div>
